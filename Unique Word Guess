@@ -1,0 +1,26 @@
+import random
+
+class UniqueWordGuessGame:
+def _init_(self):
+self.words = ["apple", "banana", "orange", "strawberry", "pineapple"]
+self.used_words = []
+
+def play(self):
+print("Welcome to the Unique Word Guess Game! Try to guess the words without repeating.")
+
+while self.words:
+word = random.choice(self.words)
+self.words.remove(word)
+self.used_words.append(word)
+guess = input(f"Guess the word: {word[0]}{'*'*(len(word)-1)} ")
+if guess.lower() == word:
+print("Correct! Next word.")
+else:
+print("Incorrect. Game over!")
+break
+
+if not self.words:
+print("Congratulations! You've guessed all the unique words.")
+
+game = UniqueWordGuessGame()
+game.play()
