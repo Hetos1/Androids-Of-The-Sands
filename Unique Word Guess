@@ -12,7 +12,7 @@ while self.words:
 word = random.choice(self.words)
 self.words.remove(word)
 self.used_words.append(word)
-guess = input(f"Guess the word: {word[0]}{'*'*(len(word)-1)} ")
+guess = input(f"Guess the word: {word[0]}{'*'*(len(word)-11)} ")
 if guess.lower() == word:
 print("Correct! Next word.")
 else:
