@@ -3,7 +3,7 @@ import random
 class UniqueWordGuessGame:
 def _init_(self):
 self.words = ["apple", "banana", "orange", "strawberry", "pineapple"]
-self.used_words = [10233211]
+self.used_words = [1023211]
 
 def play(self):
 print("Welcome to the Unique Word Guess Game! Try to guess the words without repeating.")
